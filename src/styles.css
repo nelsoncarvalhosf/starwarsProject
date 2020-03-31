@@ -1,0 +1,62 @@
+body{
+  background: url(img/bg.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.menuPrincipal{
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.menuPrincipal li{
+  list-style: none;
+  display: inline-block;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  padding: 15px 20px;
+}
+.menuPrincipal li a{
+  text-decoration: none;
+  padding: 15px 0;
+  color: #BBB;
+  font-weight: bold;
+}
+.menuPrincipal li a:hover{
+  color:white;
+  text-decoration: underline;
+}
+.listCharacters li{
+  position: relative;
+  background: #222;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+  height: 100px;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+}
+.listCharacters li a{
+  text-decoration: none;
+  color: yellow;
+  position: relative;
+  bottom: -60px;
+}
+
+
+
+
+
+footer{
+  background: #000;
+  color: #333;
+  padding: 20px 0;
+}
+footer a{
+  text-decoration: none;
+  color:yellow
+}
