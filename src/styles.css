@@ -47,6 +47,22 @@ body{
   bottom: -60px;
 }
 
+.pages li{
+  position: relative;
+  background: #222;
+  width: 5%;
+  padding: 1%;
+  margin: 1%;
+  height: 20px;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+}
+.pages li a{
+  text-decoration: none;
+  color: yellow;
+}
+
 
 
 

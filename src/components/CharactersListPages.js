@@ -3,10 +3,10 @@ import { SWService } from "../services/SWService";
 import { CharactersLists } from "./shared/CharactersLists";
 
 
-export const CharactersList = (props) => {
+export const CharactersListPages = (props) => {
   const [characters, setCharacters] = useState({ data: { results: [] } });
   const requestCharacters = async () => {
-    const charactersResult = await SWService.getCharacters(props.match.params.page = 1);
+    const charactersResult = await SWService.getCharactersPages(props.match.params.page);
     setCharacters(charactersResult);
   };
 
