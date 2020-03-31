@@ -8,7 +8,7 @@ export const Pagination = ({characters}) => {
     let qtdPage = Math.round(qtd/10);
     var rows = [];
     for(i=1;i<=qtdPage;i++){
-     rows.push(<li><Link to={`/characters/page/${i}`}> Page {i}</Link></li>);
+     rows.push(<li><a href={`/characters/page/${i}`}> Page {i}</a></li>);
     }
     return (
       <>
