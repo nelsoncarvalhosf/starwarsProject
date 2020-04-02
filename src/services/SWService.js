@@ -7,10 +7,13 @@ export class SWService {
   }
 
   static getCharacters() {
-    return axios(SWService._withBaseUrl("people"));
+    return axios(SWService._withBaseUrl("people/"));
   }
   static getCharactersPages(page) {
     return axios(SWService._withBaseUrl("people/?page=" + page));
+  }
+  static getFilms() {
+    return axios(SWService._withBaseUrl("films/"));
   }
   static getCharacter(id) {
     return axios(SWService._withBaseUrl("people/" + id));

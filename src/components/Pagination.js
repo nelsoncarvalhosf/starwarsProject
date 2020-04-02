@@ -16,5 +16,5 @@ export const Pagination = ({characters}) => {
           {rows}
         </ul>
       </>      
-      );
+    );
 }

@@ -2,10 +2,11 @@ body{
   background: url(img/bg.jpg);
   margin: 0;
   padding: 0;
+  color:#FFF;
+  font-family: Open Sans Condensed,sans-serif;
 }
 
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 .menuPrincipal{
@@ -29,22 +30,55 @@ body{
   color:white;
   text-decoration: underline;
 }
-.listCharacters li{
-  position: relative;
-  background: #222;
-  width: 20%;
-  padding: 1%;
-  margin: 1%;
-  height: 100px;
-  display: inline-block;
-  color: white;
-  border: 1px solid white;
+
+.results {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  flex-flow: row wrap;
 }
-.listCharacters li a{
-  text-decoration: none;
-  color: yellow;
+
+.results__item {
+  text-align: left;
+  display: inline-block;
   position: relative;
-  bottom: -60px;
+  margin: 0 1% 15px;
+  box-shadow: 0 3px 5px #d8d499;
+  background:#222;
+  padding: 15px 20px;
+  width: 25%;
+  overflow: hidden;
+  list-style: none;
+  flex-direction: column;
+}
+
+.results__icon {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  width: auto;
+  height: 80px;
+  opacity: .5;
+}
+.results__title {
+  margin: 0 0 10px;
+  border-bottom: 1px solid #d8d499;
+  padding-bottom: 3px;
+  line-height: 2rem;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5rem;
+}
+span {
+  font-size: 1rem;
+  color: #d8d499;
+}
+.results__info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5rem;
 }
 
 .pages li{

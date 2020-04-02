@@ -22,7 +22,6 @@ export const Character = (props) => {
         {character.data.poster_path}
         <br/>
         {character.data.overview}
-
     </div>
   );
 };

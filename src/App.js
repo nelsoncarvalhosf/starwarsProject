@@ -18,6 +18,9 @@ export default function App() {
         <li>
           <Link to="/characters">INFO CHARACTERS</Link>
         </li>
+        <li>
+          <Link to="/films">INFO FILMS</Link>
+        </li>
       </ul>
       <ApplicationRoutes />
       <Footer />
